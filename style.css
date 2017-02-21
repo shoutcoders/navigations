@@ -50,6 +50,8 @@ header {
 .navigation ul li a:hover {
 	color: #FF6300;
 }
+
+.navbar{ display: none;}
 /*Navigation menu works till width is 1024px*/
 
 .clearfix {
@@ -71,6 +73,10 @@ main{
 
 .content{ width: 65%; background: #02FBF7; float: left; height:inherit;}
 
+.content article{ width: 90%; margin-top: 10px; height: 200px;}
+
+
+/* Sidebar Styling in Main */
 .sidebar{ width: 35%; background: #FB0276; float: right; height: inherit;}
 
 .sidebar > .category{ width: 90%; margin: auto; height: 300px; margin-top: 10px; border: 1px solid #eee; background: #F3F3F3;}
@@ -78,10 +84,17 @@ main{
 /*Main Div Styling Ends*/
 
 /* Footer Styling Starts*/
-footer{ clear: both;}
+footer{ clear: both; height: 300px; text-align: center; border: none;}
+
+footer .footerbox{ width: 30%; background: #000; display: inline-table; s}
 
 
 /*Footer Styling Ends*/
+
+
+
+
+
 
 
 /* Now Media Queries for Other Devices*/
@@ -122,6 +135,7 @@ footer{ clear: both;}
 	float: none;
 	text-align: center;
 }
+.navbar{ display: none;}
 /*Navigation Styling Ends here*/
 	
 }
@@ -129,12 +143,14 @@ footer{ clear: both;}
 
 /* Media Query for Less than 768px*/
 @media screen and (max-width:768px){
-	
+
+    .navbar{ display: block; width: 10%; float: right; color: aliceblue;} 
+    .fa.fa-bars {    font-size: 27px;    display: inline-block;    cursor: pointer;}
 /*Title and Navigation is going to change here when width is less than 768px*/
 .title {
-	width: 100%;
+	width: 90%;
 	color: rgba(0, 17, 34, 1);
-	float: none;
+	float: left;
 	clear: both;
 }
 .title h1 {
@@ -152,7 +168,7 @@ footer{ clear: both;}
 	clear: both;
 	width: 100%;
 	float: none;
-	text-align: center;
+	text-align: left;
 	line-height: 50px;
 }
 .navigation ul {
@@ -164,16 +180,24 @@ footer{ clear: both;}
 	padding: 0 0px;
 	font-weight: 600;
 	width: 100%;
+	border-bottom: 1px solid #012a33;
+	
 }
 .navigation ul li a {
 	display: block;
 	text-decoration: none;
 	color: #fff;
+	padding-left: 20px;
+  border-left: 4px outset #fff;
 }
 .navigation ul li a:hover {
 	color: #FF6300;
+	border-left:4px outset #FF6300;
 	}
+    
+
 /*Navigation Styling Ends here*/
 	
 	
 }
+
