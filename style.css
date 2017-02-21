@@ -1,0 +1,179 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+	margin: 0 auto;
+	font-family: 'Open Sans', Cambria;
+}
+header {
+	width: 100%;
+	background: rgb(2, 52, 72);
+}
+.inner-header {
+	width: 100%;
+	line-height: 70px;
+}
+/* Main Header Design*/
+
+.title {
+	width: 30%;
+	color: rgba(0, 17, 34, 1);
+	float: left;
+}
+.title h1 {
+	color: #fff;
+	text-align: center;
+}
+.titleimage {
+	display: block;
+	padding-top: 5px;
+}
+/* Title of blog designed here with image*/
+
+.navigation {
+	width: 70%;
+	float: right;
+	text-align: center;
+}
+.navigation ul {
+	list-style: none;
+	margin-left: -40px;
+}
+.navigation ul li {
+	display: inline-block;
+	padding: 0 10px;
+	font-weight: 600;
+}
+.navigation ul li a {
+	text-decoration: none;
+	color: #fff;
+}
+.navigation ul li a:hover {
+	color: #FF6300;
+}
+/*Navigation menu works till width is 1024px*/
+
+.clearfix {
+	clear: both;
+}
+.fa {
+	padding-right: 5px;
+}
+
+/*Main Div Styling*/
+
+main{
+	width: 80%;
+	margin: auto;
+	height: 600px;
+	background: #02C8FB;
+	
+}
+
+.content{ width: 65%; background: #02FBF7; float: left; height:inherit;}
+
+.sidebar{ width: 35%; background: #FB0276; float: right; height: inherit;}
+
+.sidebar > .category{ width: 90%; margin: auto; height: 300px; margin-top: 10px; border: 1px solid #eee; background: #F3F3F3;}
+
+/*Main Div Styling Ends*/
+
+/* Footer Styling Starts*/
+footer{ clear: both;}
+
+
+/*Footer Styling Ends*/
+
+
+/* Now Media Queries for Other Devices*/
+
+@media screen and (max-width: 1100px){
+	main{
+	width: 95%;
+	margin: auto;
+	height: 600px;
+	background: #02C8FB;
+	
+}
+	
+}
+
+
+@media screen and (max-width: 1024px) {
+/*Title and Navigation is going to change here when width is less than 1024px*/
+.title {
+	width: 100%;
+	color: rgba(0, 17, 34, 1);
+	float: none;
+	clear: both;
+}
+.title h1 {
+	color: #fff;
+	text-align: center;
+}
+.titleimage {
+	display: block;
+	padding-top: 5px;
+}
+/* Title of blog designed here with image*/
+
+.navigation {
+	clear: both;
+	width: 100%;
+	float: none;
+	text-align: center;
+}
+/*Navigation Styling Ends here*/
+	
+}
+
+
+/* Media Query for Less than 768px*/
+@media screen and (max-width:768px){
+	
+/*Title and Navigation is going to change here when width is less than 768px*/
+.title {
+	width: 100%;
+	color: rgba(0, 17, 34, 1);
+	float: none;
+	clear: both;
+}
+.title h1 {
+	color: #fff;
+	text-align: center;
+}
+.titleimage {
+	display: block;
+	padding-top: 5px;
+	text-align: left;
+}
+/* Title of blog designed here with image*/
+
+.navigation {
+	clear: both;
+	width: 100%;
+	float: none;
+	text-align: center;
+	line-height: 50px;
+}
+.navigation ul {
+	list-style: none;
+	margin-left: -40px;
+}
+.navigation ul li {
+	display: block;
+	padding: 0 0px;
+	font-weight: 600;
+	width: 100%;
+}
+.navigation ul li a {
+	display: block;
+	text-decoration: none;
+	color: #fff;
+}
+.navigation ul li a:hover {
+	color: #FF6300;
+	}
+/*Navigation Styling Ends here*/
+	
+	
+}
